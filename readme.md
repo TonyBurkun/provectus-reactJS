@@ -3,8 +3,8 @@
 Single page application
 
 Frameworks:
-*ReactJS
-*Bootstrap
+* ReactJS
+* Bootstrap
 
 
 ## Install
