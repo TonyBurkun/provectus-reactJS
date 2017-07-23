@@ -1,0 +1,60 @@
+* {
+  outline: none;
+}
+
+
+img{
+  display: block;
+  width: 100%;
+}
+
+.navbar{
+  border-radius: 0;
+
+  .navbar-inverse{
+    .navbar-brand{
+      color: #fff;
+    }
+  }
+
+  .navbar-link {
+    cursor: pointer;
+    font-weight: 200;
+    &.active{
+      font-weight: bold;
+    }
+  }
+
+
+}
+
+
+
+.identification-block{
+  &__form{
+    width: 400px;
+    padding: 20% 0;
+  }
+
+  &__title{
+    margin-bottom: 2.7rem;
+  }
+
+  &__buttons{
+    .btn{
+      margin-right: 10px;
+    }
+
+  }
+}
+
+
+.login-form,
+.registration-form{
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+}
