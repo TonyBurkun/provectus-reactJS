@@ -1,5 +1,4 @@
 var React = require('react'),
-    Nav = require('Nav'),
     usersList = require('usersList'),
     User = require('User');
 
@@ -48,7 +47,6 @@ var Users = React.createClass({
 
         return (
             <section>
-                <Nav/>
                <div className="container">
                    <div className="table-responsive">
                        <table className="table">

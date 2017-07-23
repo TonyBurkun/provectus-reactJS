@@ -1,18 +1,19 @@
 var React = require('react'),
-    {Link, IndexLink} = require('react-router');
+    {Link, IndexLink} = require('react-router'),
+    Logout = require('Logout');
 
 var Nav = React.createClass({
 
-    handleTap: function () {
-        var isTokenExist = localStorage.getItem('auth_token');
-
-        if (isTokenExist) {
-            localStorage.removeItem('auth_token');
-            window.location.hash = '/';
-        } else {
-            window.location.hash = '/login';
-        }
-    },
+    // handleTap: function () {
+    //     var isTokenExist = localStorage.getItem('auth_token');
+    //
+    //     if (isTokenExist) {
+    //         localStorage.removeItem('auth_token');
+    //         window.location.hash = '/';
+    //     } else {
+    //         window.location.hash = '/login';
+    //     }
+    // },
 
     render: function () {
         var isTokenExist = localStorage.getItem('auth_token');
@@ -28,10 +29,21 @@ var Nav = React.createClass({
 
         var showButton = function () {
             if (isTokenExist) {
-                return 'Log out'
+                return (
+                    <Logout/>
+                )
 
             } else {
-                return 'Log in'
+                return (
+                    <ul className="nav navbar-nav navbar-right">
+                        <li>
+                            <Link to="/login" className="navbar-right navbar-link" activeClassName='active' >Login</Link>
+                        </li>
+                        <li>
+                            <Link to="/registration" className="navbar-right navbar-link" activeClassName='active' >Registration</Link>
+                        </li>
+                    </ul>
+                )
 
             }
         };
@@ -58,11 +70,7 @@ var Nav = React.createClass({
                             </li>
                             {showUsersItem()}
                         </ul>
-                        <ul className="nav navbar-nav navbar-right">
-                            <li>
-                                <Link className="navbar-right navbar-link" onClick={this.handleTap}>{showButton()}</Link>
-                            </li>
-                        </ul>
+                        {showButton()}
                     </div>
 
                 </div>

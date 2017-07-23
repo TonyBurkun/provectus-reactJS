@@ -1,9 +1,12 @@
-var React = require('react');
+var React = require('react'),
+    Nav = require('Nav');
+
 
 var Main = React.createClass({
     render: function () {
         return (
             <div>
+                <Nav/>
                 {this.props.children}
             </div>
         )

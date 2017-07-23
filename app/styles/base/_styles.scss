@@ -11,17 +11,12 @@ img{
 .navbar{
   border-radius: 0;
 
-  .navbar-inverse{
-    .navbar-brand{
-      color: #fff;
-    }
-  }
-
   .navbar-link {
     cursor: pointer;
     font-weight: 200;
     &.active{
       font-weight: bold;
+      color: #fff;
     }
   }
 
@@ -56,5 +51,6 @@ img{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: -72px;
   }
 }

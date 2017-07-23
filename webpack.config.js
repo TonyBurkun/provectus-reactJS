@@ -31,7 +31,8 @@ module.exports = {
       User: 'app/components/User.jsx',
       Nav: 'app/components/Nav.jsx',
       usersList: 'app/api/usersList.jsx',
-      Posts: 'app/components/Posts.jsx'
+      Posts: 'app/components/Posts.jsx',
+      Logout: 'app/components/Logout.jsx'
 
     },
     extensions: ['', '.js', '.jsx']

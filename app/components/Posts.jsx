@@ -1,11 +1,9 @@
-var React = require('react'),
-    Nav = require('Nav');
+var React = require('react');
 
 var Posts = React.createClass({
     render: function () {
         return (
             <section>
-                <Nav/>
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-6 col-md-4">
