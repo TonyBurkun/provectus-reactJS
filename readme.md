@@ -12,4 +12,7 @@ Frameworks:
 ```
 $ npm install
 ```
+## List of Webpack tasks
 
+```
+webpack - Create build
